@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_cookies_manager import EncryptedCookieManager
 
-from app.setting.config import cfg
+from setting.config import cfg
 
 cookies = EncryptedCookieManager(prefix='my_app_', password='jashhasusauasuosacjb_1111_ascisa')
 
@@ -10,6 +10,7 @@ if not cookies.ready():
 
 st.sidebar.title("Main Menu")
 st.title("TEST SEND EMAIL")
-st.text("Alo anh Nhân ơi vip ko kkk")
-st.image(cfg.IMAGE_AVATAR, use_column_width=True)
-
+# Replace with your direct link from Google Drive
+image_url = 'https://drive.usercontent.google.com/download?id=13DkXSXTGEiPfbsu2arIAgG-2fMo6VJ2D&export=view'
+st.image(image_url, use_column_width=True)
+st.title("TEST DEPLOY")
